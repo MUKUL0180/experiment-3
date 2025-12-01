@@ -1,0 +1,66 @@
+<div class="form-wrap">
+  <div class="booking-card" role="region" aria-label="Hotel Room Booking Form">
+    <h2>Hotel Room Booking Form</h2>
+
+    <form>
+      <div class="field-row">
+        <label for="fullname">Full Name:</label>
+        <input id="fullname" name="fullname" type="text" placeholder="">
+      </div>
+
+      <div class="field-row">
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="">
+      </div>
+
+      <div class="field-row">
+        <label for="phone">Phone:</label>
+        <input id="phone" name="phone" type="tel" placeholder="">
+      </div>
+
+      <div class="field-row">
+        <label for="checkin">Check-in Date:</label>
+        <input id="checkin" name="checkin" type="date">
+      </div>
+
+      <div class="field-row">
+        <label for="checkout">Check-out Date:</label>
+        <input id="checkout" name="checkout" type="date">
+      </div>
+
+      <div class="field-row">
+        <label for="roomtype">Room Type:</label>
+        <select id="roomtype" name="roomtype">
+          <option>Single Room</option>
+          <option>Double Room</option>
+          <option>Suite</option>
+        </select>
+      </div>
+
+      <div class="field-row">
+        <label for="guests">Number of Guests:</label>
+        <input id="guests" name="guests" type="number" min="1" class="small-input" placeholder="1">
+      </div>
+
+      <div class="textarea-row" style="margin-top:8px;">
+        <label for="requests">Special Requests:</label>
+        <textarea id="requests" name="requests" class="special-requests" placeholder=""></textarea>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="btn">Book Now</button>
+        <button type="reset" class="btn">Reset Form</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Outcome bullets similar to screenshot -->
+<div class="outcome">
+  <strong>Outcome</strong>
+  <ul>
+    <li>Successfully created a hotel room booking form webpage using HTML.</li>
+    <li>Implemented input fields, labels, select, textarea, and buttons.</li>
+    <li>Learned practical form design techniques for web applications.</li>
+  </ul>
+</div>
