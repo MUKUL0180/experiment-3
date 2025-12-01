@@ -1,0 +1,106 @@
+/* Outer layout like the screenshot: left "Output:" label + centered form */
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.label-output {
+  font-weight: 700;
+  margin: 18px 0 6px 0;
+}
+
+/* Paper-like center area */
+.form-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.booking-card {
+  width: 320px;                /* narrow like your screenshot */
+  border: 2px solid #111;
+  padding: 16px;
+  box-sizing: border-box;
+  text-align: left;
+  background: #fff;
+}
+
+.booking-card h2 {
+  margin: 0 0 12px 0;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  font-size: 13px;
+}
+
+.field-row label {
+  width: 110px;
+  font-size: 12px;
+}
+
+.field-row input[type="text"],
+.field-row input[type="email"],
+.field-row input[type="tel"],
+.field-row input[type="number"],
+.field-row input[type="date"],
+.field-row select {
+  flex: 1;
+  padding: 4px 6px;
+  font-size: 13px;
+  border: 1px solid #999;
+  height: 26px;
+  box-sizing: border-box;
+}
+
+.small-input {
+  width: 60px;
+}
+
+.textarea-row label { display:block; margin-bottom:6px; font-size:12px; }
+.special-requests {
+  width: 100%;
+  min-height: 48px;
+  resize: vertical;
+  padding: 6px;
+  border: 1px solid #999;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  margin-top: 10px;
+}
+
+.btn {
+  padding:6px 10px;
+  border:1px solid #666;
+  background:#eee;
+  cursor: pointer;
+  font-size:12px;
+}
+
+/* Outcome section below like screenshot */
+.outcome {
+  margin-top: 22px;
+  font-size: 13px;
+}
+.outcome ul { margin:6px 0 0 18px; }
+
+/* Make print look similar: remove background, ensure everything fits */
+@media print {
+  body { margin: 0; padding: 0; }
+  .page { margin: 0; }
+  .booking-card { box-shadow: none; }
+  .btn { -webkit-print-color-adjust: exact; }
+}
